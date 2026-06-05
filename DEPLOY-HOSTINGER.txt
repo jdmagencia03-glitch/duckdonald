@@ -1,0 +1,54 @@
+================================================================================
+  DEPLOY NA HOSTINGER - Gerenciador de Arquivos (public_html)
+================================================================================
+
+O QUE ENVIAR (apenas estes itens na raiz do site):
+  - index.html
+  - .htaccess
+  - pasta js/  (pixel.js, latest.js)
+  - pasta imagens/  (todas as imagens .png usadas no site)
+
+NAO ENVIAR:
+  - node_modules/
+  - DEPLOY-HOSTINGER.txt (este arquivo e so guia)
+  - assets/ (pasta interna do Cursor)
+
+PASSO A PASSO:
+  1. Acesse hPanel > Sites > Gerenciar > Arquivos > Gerenciador de Arquivos
+  2. Abra a pasta public_html (ou a pasta do seu dominio)
+  3. Apague arquivos antigos do site anterior, se houver
+  4. Envie index.html e .htaccess na raiz de public_html
+  5. Crie/envie a pasta js/ com os 2 arquivos
+  6. Crie/envie a pasta imagens/ com as imagens
+  7. Confirme que index.html esta em public_html/index.html (nao dentro de subpasta)
+
+ESTRUTURA FINAL:
+  public_html/
+    index.html
+    .htaccess
+    js/
+      pixel.js
+      latest.js
+    imagens/
+      logo-pato-donald-banner.png
+      pato-donald-pro.png
+      receitas-juninas-pro.png
+      conteudos-drive-organizado.png
+      tio-patinhas-500-hqs.png
+      jogos-nostalgicos-donald.mp4
+      OfQSWzf.png
+      carrossel/   (01.png a 61.png — capas do carrossel)
+
+LINKS DE PAGAMENTO (ja configurados no index.html):
+  - Basico R$ 10,00:  https://checkout.payt.com.br/eceb5067b02a08dd221f4503c7e9f64a
+  - Premium R$ 27,00 (modal): https://checkout.payt.com.br/264cde102d45eabdf683d7f243a17f2f
+  - Premium R$ 37,90: https://checkout.payt.com.br/8a0039a0e1ca776edabd4e4be1dd109f
+
+VIDEO: LiteVideo (carrega da internet - precisa de conexao ativa no servidor/CDN)
+
+APOS PUBLICAR:
+  - Abra https://seudominio.com e teste os 3 botoes de compra
+  - Teste no celular
+  - Limpe cache do navegador (Ctrl+Shift+R) se nao ver alteracoes
+
+================================================================================
