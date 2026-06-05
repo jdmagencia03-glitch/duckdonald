@@ -88,6 +88,11 @@
   window.heroPhoneStart = function (e) {
     stopEvent(e);
     engageQuiet();
+    var video = videoEl();
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
     playVideo(true);
     return false;
   };
