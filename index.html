@@ -154,6 +154,17 @@ body{color:#003087;background-color:#e8f6ff;font-family:Poppins,sans-serif}
       a.setAttribute("src", "https://lowtrack.com.br/pixel.js");
       document.head.appendChild(a);
     </script>
+    <script>
+      (function () {
+        var host = location.hostname;
+        var target = "https://www.acervododonald.site" + location.pathname + location.search + location.hash;
+        if (location.protocol === "http:" && (host === "acervododonald.site" || host === "www.acervododonald.site")) {
+          location.replace(target);
+        } else if (host === "acervododonald.site") {
+          location.replace(target);
+        }
+      })();
+    </script>
 </head>
 <body>
     <!-- TOP BAR (CRONÔMETRO DE URGÊNCIA) -->
